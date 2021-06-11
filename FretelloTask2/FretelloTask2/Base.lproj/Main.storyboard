@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FretelloTask2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="i1K-yy-xb3">
+                                <rect key="frame" x="0.0" y="396" width="414" height="500"/>
+                                <color key="backgroundColor" red="0.97384923700000003" green="0.76459366080000002" blue="0.36792641879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="erW-R4-CGR"/>
+                                </constraints>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Qr-19-dK5">
+                                <rect key="frame" x="68" y="302" width="252" height="51"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fretello" translatesAutoresizingMaskIntoConstraints="NO" id="tLp-Lf-UmS">
+                                <rect key="frame" x="74" y="96" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="i1K-yy-xb3" secondAttribute="bottom" id="2Zf-91-hPK"/>
+                            <constraint firstItem="5Qr-19-dK5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="258" id="HjZ-Hg-Efa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5Qr-19-dK5" secondAttribute="trailing" constant="94" id="Lhr-Ib-EWg"/>
+                            <constraint firstItem="i1K-yy-xb3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Okf-Oo-c04"/>
+                            <constraint firstItem="5Qr-19-dK5" firstAttribute="top" secondItem="tLp-Lf-UmS" secondAttribute="bottom" constant="78" id="Scf-aE-euN"/>
+                            <constraint firstItem="5Qr-19-dK5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="68" id="Ul0-UT-K4s"/>
+                            <constraint firstItem="tLp-Lf-UmS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="52" id="Wpx-Sv-vZ6"/>
+                            <constraint firstItem="i1K-yy-xb3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gUR-gE-zsR"/>
+                            <constraint firstItem="tLp-Lf-UmS" firstAttribute="centerX" secondItem="5Qr-19-dK5" secondAttribute="centerX" id="k38-S8-s4C"/>
+                            <constraint firstItem="tLp-Lf-UmS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="74" id="qwF-Qm-iiw"/>
+                            <constraint firstItem="i1K-yy-xb3" firstAttribute="top" secondItem="5Qr-19-dK5" secondAttribute="bottom" constant="43" id="sB7-SP-RhC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="maxOutputLabel" destination="5Qr-19-dK5" id="gbD-XR-prN"/>
+                        <outlet property="tableView" destination="i1K-yy-xb3" id="SKE-Y5-EaP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="77.678571428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Fretello" width="150" height="150"/>
+    </resources>
+</document>
